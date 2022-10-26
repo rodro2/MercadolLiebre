@@ -1,0 +1,346 @@
+*{ box-sizing: border-box;
+
+}
+
+body { font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color:#ebebeb;
+}
+
+p { font-size: 12px;
+
+}
+
+h3 {font-size: 24px;
+
+}
+
+.precios { font-size: 18px;
+
+}
+
+.descuentos { font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion { font-size: 16px;
+    display: none;
+
+}
+
+header { background-color: #EAC926;
+}
+
+.hamburguesa { background-color:#03264C;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    max-width: 50px;
+    padding: 10px 0px;
+    font-size: 18px;
+    margin: auto;
+    
+}
+
+section.pie { display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: white;
+    }
+
+section.pie article{
+    max-width: 30vw;
+}
+
+
+
+footer i {font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+main i{ color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: block;
+
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: 450ms;
+}
+
+.container-product{
+    
+    position: relative;
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto{
+    max-width: 100%;
+        
+}
+
+
+
+
+nav { display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.mainheader{
+    display: flex;
+}
+
+.logo{
+    width: 50%;
+}
+.barra{
+    
+    display: none;
+    font-size: 16px;
+    width: 47vw;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-image: url("/images/searchicon.jpg");
+    background-size:3vw;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 10px;
+    
+
+}
+
+.copy {
+    text-align: center;
+    font-weight: 400;
+}
+
+
+main i:hover{
+    transform: rotateZ(-90deg);
+}
+
+
+para organizar el camion
+/*/.camion{
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+.dale {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative ;
+    padding: 15px;
+}/*/
+
+main { text-align: center;
+    width: 90%;
+
+
+}
+
+section article{
+    border-bottom: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+    text-align: left;
+}
+
+
+
+nav a{ text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.precios{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.descuentos{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.detalleproducto{ display: flex;
+           
+
+}
+
+.foto {
+    width: 100%;
+    }
+
+.banner {
+    width: 100%;
+}
+
+
+
+
+
+@media (min-width:361px) {
+    .descripcion { display: block;
+    }
+    .producto { transition: 450ms;
+    }
+    nav {display: block;
+    }
+    .hamburguesa {display: none;
+    }
+    .producto{
+        max-width: 50%;
+    }
+    .mainheader{ 
+        display:flex ;
+        justify-content: space-around;
+    }
+
+    .logo{
+        max-width: 30%;
+    }
+
+    .barra{
+        max-width: 40%;
+        display: flex;
+        
+    }
+
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        max-width: 100%;
+        font-size: 8px;
+    
+    }
+    
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    
+    nav a{ text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 5px 0;
+            }
+}
+
+
+@media (min-width:768px){
+    .descripcion { display: block;
+    }
+    
+    nav {display: block;
+    }
+    .hamburguesa {display: none;
+    }
+    .producto{
+        max-width: 25%;
+        transition: 450ms;
+    }
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .mainheader{ 
+        display:flex ;
+        justify-content: space-around;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    .copy{
+        font-size: 20px;
+    }
+    
+    
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.loginbar{
+    padding: 0;
+}
+
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, rgb(238,144,144));
+}
+
+
+.descripcion{ opacity: 0;
+    transition: 450ms;
+}
+
+.descripcion:hover{ 
+   opacity: 1;
+}
+
+.sendbuttonlogin{
+    transition: 450ms;
+}
+.sendbuttonlogin:hover{
+    background-color: #0022AA ;
+    color: white;
+}
+
+.pie i {
+   display: flex;
+   justify-content: center;
+}
