@@ -6,7 +6,8 @@ const path = require("path");
 
 app.use(express.static("public"))
 
-app.listen(3030, ()=> console.log("server corriendo"));
+const port = process.env.PORT || 3030
+app.listen(port, ()=> console.log("server corriendo"));
 
 
 app.get("/", (req, res) => {
